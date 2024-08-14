@@ -142,11 +142,11 @@ white-space:normal;
   .pagetop h1 {
     font-size: calc(3rem + 4vw);
   }
-   #scratcher-box {
+/*    #scratcher-box {
     width: 24em;
     height: 24em;
     top:65%;
-   } 
+   }  */
 } 
 
 /* @media (max-width: 430px), (max-height:670px) {

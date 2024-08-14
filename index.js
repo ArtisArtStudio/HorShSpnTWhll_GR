@@ -4,9 +4,9 @@ window.onload = async () => {
     getOS();
     /* let elem = document.getElementById('scratcher-box');
     let ht = window.getComputedStyle(elem, null).getPropertyValue("top"); */
-    /* let mql = window.matchMedia("(max-height: 300px)");
+    let mql = window.matchMedia("(max-width: 320px)");
     alert(mql.matches);
-    alert(window.innerHeight); */
+    alert(window.innerWidth);
     
     var a = new Image();
     /* if (userOS ="iOS" && userOSver<13) {
