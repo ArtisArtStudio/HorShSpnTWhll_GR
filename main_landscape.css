@@ -215,7 +215,20 @@ font-size: 7vw !important;
   #scratcher-box {
     width: 16em;
     height: 16em;
+    top: 45%;
+    left: 5%;
+  } 
+  
+}
+@media screen and (max-height:300px){ 
+  .pagetop h1 {
+    font-size: calc(1rem + 6vw);
+  }
+  #scratcher-box {
+    width: 15em;
+    height: 15em;
     top: 50%;
+    left: 3vw;
   } 
   
 }
