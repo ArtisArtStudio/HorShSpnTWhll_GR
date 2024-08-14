@@ -2,6 +2,12 @@ import {confetti_effect, playticksound, onResetClicked} from './main.js';
 var finishedSpin = false;
 window.onload = async () => {
     getOS();
+    /* let elem = document.getElementById('scratcher-box');
+    let ht = window.getComputedStyle(elem, null).getPropertyValue("top"); */
+    let mql = window.matchMedia("(max-height: 321px)");
+    alert(mql.matches);
+;
+    
     var a = new Image();
     /* if (userOS ="iOS" && userOSver<13) {
         a.src = './images/spinthewheel-overlay.png';
