@@ -213,9 +213,9 @@ font-size: 7vw !important;
     font-size: calc(1rem + 6vw);
   }
   #scratcher-box {
-    width: 16em;
-    height: 16em;
-    top: 45%;
+    width: 17em;
+    height: 17em;
+    top: 40%;
     left: 5%;
   } 
   

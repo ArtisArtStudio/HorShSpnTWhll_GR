@@ -116,6 +116,7 @@ white-space:normal;
 }
 #t1 {
   width: 80%;
+  text-align: center;
 }
 
 #scratcher-box {
@@ -262,9 +263,9 @@ white-space:normal;
    #H3 {
     line-height: 20px;
   } 
-  #t1 {
+  /* #t1 {
     width: 300px;
-  }
+  } */
 }
 #scratcher-box canvas {
   cursor: grab;
