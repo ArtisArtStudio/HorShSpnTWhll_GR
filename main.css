@@ -181,12 +181,12 @@ white-space:normal;
     position:absolute;
     width: 30em;
     height: 30em; 
-    top: 60%;
+    top: 65%;
   }
 }
 @media (min-height: 675px) and (min-width: 1024px){ 
   .pagetop h3 {
-    font-size: calc(2rem + 0.5vw);
+    font-size: calc(2rem + 0.5vh);
   }
   .pagetop h4 {
     font-size: 2vh;
@@ -198,7 +198,7 @@ white-space:normal;
     position:absolute;
     width: 26em;
     height: 26em; 
-    top: 60%;
+    top: 65%;
   }
 }
 @media (max-width: 375px), (max-height:667px) {
