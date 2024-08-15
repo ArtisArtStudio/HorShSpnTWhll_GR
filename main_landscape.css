@@ -220,7 +220,7 @@ font-size: 7vw !important;
   } 
   
 }
-@media screen and (max-height:300px){ 
+@media screen and (max-height:290px){ 
   .pagetop h1 {
     font-size: calc(1rem + 6vw);
   }
