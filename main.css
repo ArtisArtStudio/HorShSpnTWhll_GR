@@ -35,7 +35,7 @@ body {
   width: 100%;
 
   /* Prevent browser from handling touch events */
-  touch-action: none;
+  /*touch-action: none;*/
 
   display: flex;
   flex-direction: column;
@@ -165,17 +165,17 @@ white-space:normal;
   }
 }  */
 
-@media (min-width: 768px) and (min-height: 1024px){ 
+@media (min-width: 768px) and (min-height: 930px){ 
   
   .pagetop h3 {
-    font-size: calc(2rem + 1.2vw);
+    font-size: calc(1.5rem + 1.2vw);
   }
   .pagetop h1 {
     font-size: calc(5rem + 4vw);
   }
 
   #boy{
-    line-height: 15vh !important;
+    line-height: 18vh !important;
   }
   #scratcher-box {
     position:absolute;
@@ -184,7 +184,7 @@ white-space:normal;
     top: 60%;
   }
 }
-@media (min-height: 768px) and (min-width: 1024px){ 
+@media (min-height: 675px) and (min-width: 1024px){ 
   .pagetop h3 {
     font-size: calc(2rem + 0.5vw);
   }
@@ -192,7 +192,7 @@ white-space:normal;
     font-size: 2vh;
   }
   #boy{
-    line-height: 14vw !important;
+    line-height: 18vh !important;
   }
   #scratcher-box {
     position:absolute;
