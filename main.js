@@ -56,39 +56,28 @@ function confetti_effect() {
         soundHandle.play();
     }
     triggered=true;
-    //soundcounter=0;
-    var duration = 10 * 1000;
-    var animationEnd = Date.now() + duration;
-    var skew=1;
-    (function frame() {
-        var timeLeft = animationEnd - Date.now();
-        // var ticks = Math.max(200, 300 * (timeLeft / duration));
-        skew = Math.max(0.8, skew - 0.001);
-        c = confetti({
-            particleCount: 1,
-            startVelocity: 0,
-            ticks: 100,
-            scalar: 2,
-            origin: {
-            x: Math.random(),
-            // since particles fall down, skew start toward the top
-            y: (Math.random() * skew) - 0.2
-            },
-            colors: ['#ffffff'],
-            shapes: ['circle'],
-            gravity: randomInRange(0.4, 0.6),
-            scalar: randomInRange(0.4, 1),
-            drift: randomInRange(-0.4, 0.4)
-        });
-        // keep going until we are out of time
-        if (timeLeft > 0) {
-            requestAnimationFrame(frame);
+   // do this for 10 seconds
+   var duration = 10 * 1000;
+   var end = Date.now() + duration;
+   var defaults = { startVelocity: 10, spread: 360, ticks: 70, zIndex: 0 };
+   var particleCount = 5 ;
+   (function frame() {
+   // launch a few confetti from the left edge
+   confetti({...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }, colors: ['#FFFFFF']}
+   );
+   // and launch a few from the right edge
+   confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },colors: ['#FFFFFF']}
+   );
 
-            return;
-        }
-        //$("#resetbutton").show();
-
-    }());
+   // keep going until we are out of time
+   if (Date.now() < end) {
+       requestAnimationFrame(frame);
+       
+       return;
+   }
+   $("#resetbutton").show();
+   
+   }());
           
  };
 
