@@ -1,6 +1,5 @@
 import {confetti_effect, playticksound, onResetClicked} from './main.js';
 var finishedSpin = false;
-var blockScroll = false;
 window.onload = async () => {
     getOS();
     /* let elem = document.getElementById('scratcher-box');
@@ -105,6 +104,10 @@ window.onload = async () => {
         false,
       );
       $('.wheel-wrapper').on('touchstart', function(e)
+        {
+            e.preventDefault();
+        });
+        $('.wheel-wrapper').on('touchmove', function(e)
         {
             e.preventDefault();
         });
