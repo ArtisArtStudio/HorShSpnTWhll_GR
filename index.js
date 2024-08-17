@@ -103,14 +103,6 @@ window.onload = async () => {
         },
         false,
       );
-      $('.wheel-wrapper').on('touchstart', function(e)
-        {
-            e.preventDefault();
-        });
-        $('.wheel-wrapper').on('touchmove', function(e)
-        {
-            e.preventDefault();
-        });
     window.addEventListener('click', (e) => {
   
       // Listen for click event on spin button:

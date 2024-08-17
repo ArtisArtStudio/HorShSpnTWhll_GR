@@ -35,7 +35,7 @@ body {
   width: 100%;
 
   /* Prevent browser from handling touch events */
-  touch-action: pan-y;
+  touch-action: none;
 
   display: flex;
   flex-direction: column;
