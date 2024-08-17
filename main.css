@@ -28,7 +28,7 @@ body {
     -ms-text-size-adjust: none;
         text-size-adjust: none;
   /* Prevent pull-down-to-refresh gesture */
-  /* overscroll-behavior-y: contain; */
+   overscroll-behavior-y: contain; 
 
   /* Prevent iOS rubber-band effect */
   position: fixed;
