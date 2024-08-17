@@ -68,7 +68,7 @@ window.onload = async () => {
     
     await loadImages(a);
     const wheel = new Wheel(container, props);
-    wheel.isInteractive = false;
+    wheel.isInteractive = true;
     document.querySelector('.wheel-wrapper').style.visibility = 'visible';
 
     var functionFinished = function() {
