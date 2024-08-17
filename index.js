@@ -104,24 +104,10 @@ window.onload = async () => {
         },
         false,
       );
-      $(window).on('touchstart', function(e)
-    {
-        if ($(e.target).closest('.wheel-wrapper').length == 1)
-        {
-            blockScroll = true;
-        }
-    });
-    $(window).on('touchend', function()
-    {
-        blockScroll = false;
-    });
-    $(window).on('touchmove', function(e)
-    {
-        if (blockScroll)
+      $('.wheel-wrapper').on('touchstart', function(e)
         {
             e.preventDefault();
-        }
-    });
+        });
     window.addEventListener('click', (e) => {
   
       // Listen for click event on spin button:
