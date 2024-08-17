@@ -1,5 +1,6 @@
 import {confetti_effect, playticksound, onResetClicked} from './main.js';
 var finishedSpin = false;
+var blockScroll = false;
 window.onload = async () => {
     getOS();
     /* let elem = document.getElementById('scratcher-box');
@@ -105,10 +106,21 @@ window.onload = async () => {
       );
       $(window).on('touchstart', function(e)
     {
-    if ($(e.target).closest('.wheel-wrapper').length == 1)
+        if ($(e.target).closest('.wheel-wrapper').length == 1)
+        {
+            blockScroll = true;
+        }
+    });
+    $(window).on('touchend', function()
     {
-        e.preventDefault();
-    }
+        blockScroll = false;
+    });
+    $(window).on('touchmove', function(e)
+    {
+        if (blockScroll)
+        {
+            e.preventDefault();
+        }
     });
     window.addEventListener('click', (e) => {
   
